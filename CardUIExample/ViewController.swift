@@ -140,7 +140,7 @@ class ViewController: UIViewController, UIViewControllerTransitioningDelegate {
         let navigationController = UINavigationController(rootViewController: viewController)
         navigationController.transitioningDelegate = self
         navigationController.modalPresentationStyle = .custom
-        UINavigationBar.appearance().titleTextAttributes = [NSFontAttributeName: UIFont.boldSystemFont(ofSize: 16)]
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 16)]
 
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleDismissTapGesture(gestureRecognizer:)))
         navigationController.view.addGestureRecognizer(tapGestureRecognizer)
