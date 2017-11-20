@@ -115,12 +115,12 @@ class ViewController: UIViewController, UIViewControllerTransitioningDelegate {
     }
 
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return AnimationController(direction: .present) : nil
+        return AnimationController(direction: .present)
     }
 
     func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         // Get UIKit to animate if it's not an interative animation
-        return AnimationController(direction: .dismiss) : nil
+        return AnimationController(direction: .dismiss)
     }
 
     func interactionControllerForPresentation(using animator: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
